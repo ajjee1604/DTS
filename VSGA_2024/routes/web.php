@@ -17,7 +17,7 @@ Route::get('/about', function(){
 Route::get('/user/{name}', function($name){
     return 'Nama Saya '.$name;
 });
-Route::get('/posts/{podt}/{comment}', function($post,$comment){
+Route::get('/posts/{post}/{comment}', function($post,$comment){
     return 'Pos ke-' . $post . "Komentar ke-:" . $comment;
 });
 Route::get('/kodebarang/{jenis}/{merek?}',function ($jk='k01',$mrk='noki'){
